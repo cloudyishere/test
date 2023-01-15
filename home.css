@@ -1,51 +1,3 @@
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.p {
-  background-color:orangered;
-  border: none;
-  color: blue;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-  z-index: 1;
-  align-self: center;
-  justify-self: center;
-}
-
-.top {
-  bottom: 50;
-  background-color: blanchedalmond;
-  border-radius: 20px;
-}
-
-.nt {
-  height: 40px;
-  border-color: transparent;
-}
-
-.act {
-  height: 40px;
-  border-radius: 5px;
-}
-
-body {
-  background-image: url(bakg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-p {
-  font-family: Ubuntu;
-  color: black;
-}
-
 .loader {
   position: fixed;
   top: 0;
@@ -83,64 +35,92 @@ p {
   }
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
   text-align: center;
-  font-family: ubuntu;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.span {
-  text-align: right;
-  color: white;
-  font-size: larger;
-}
-
-.wp {
-  background-color: #f1f1f1;
-  border: none;
-  color: limegreen;
-  padding: 10px 20px;
+nav {
+  background-color: #e6e6e6;
+  padding: 10px;
   text-align: center;
-  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
   display: inline-block;
-  margin: 4px 2px;
-  border-radius: 16px;
-  z-index: 1;
-  align-self: center;
-  justify-self: center;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 20px;
+}
+
+#about {
+  background-color: #f2f2f2;
+}
+
+#cakes {
+  background-color: #e6e6e6;
+}
+
+#order {
+  background-color: #f2f2f2;
+}
+
+#contact {
+  background-color: #e6e6e6;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label, input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
 }

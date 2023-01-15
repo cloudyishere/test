@@ -1,41 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-    <script src="home.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Shommies&copy;&#8482;</title>
+  <title>Shommies</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <script src="home.js"></script>
 </head>
 <body>
-    <div class="loader"></div>
-    <nav class="top">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="act">home</button>
-        <button class="nt"><a href="products.html">Our Products</a></button>
-        <button class="nt"><a href="aboutus.html">About Us</a></button>
+  <div class="loader"></div>
+  <header>
+    <h1>Welcome to Shommies Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#cakes">Cakes</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
     </nav>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="aboutus.html">About</a>
-        <a href="service">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
-
-    <div class="span">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> ≡ </span>
-    </div>
-
-    <button disabled="disabled" class="wp"><img src="logo.png" alt="logo" width="400" height="200"> <br>
-    <p>Welcome to Shommies. The best bakery in the world.</p></button><br>
-    <button class="p"><a href="products.html"> Our Products</a></button>
-
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a small bakery that specializes in homemade cakes. We use the freshest ingredients and a lot of love to make the best cakes you've ever tasted.</p>
+    </section>
+    <section id="cakes">
+      <h2>Our Cakes</h2>
+      <ul>
+        <li>Chocolate Cake</li>
+        <li>Vanilla Cake</li>
+        <li>Strawberry Cake</li>
+        <li>Lemon Cake</li>
+      </ul>
+    </section>
+    <section id="order">
+      <h2>Order</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <label for="cake">Select a Cake:</label>
+        <select id="cake" required>
+          <option value="">Select a Cake</option>
+          <option value="chocolate">Chocolate Cake</option>
+          <option value="vanilla">Vanilla Cake</option>
+          <option value="strawberry">Strawberry Cake</option>
+          <option value="lemon">Lemon Cake</option>
+        </select>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Phone: 0802-321-1710</p>
+      <p>Email: Shommies@gmail.com</p>
+      <p>Address: plot, rd 221, Gateway Sparklight Estate, Ogun state, Nigeria</p>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright © Shommies</p>
+  </footer>
 </body>
 </html>
